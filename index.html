@@ -1,0 +1,74 @@
+<!-- 
+    If you're being a little nosey. Note that it's not mobile friendly. (probably)
+
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Under Construction </title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <!-- Just a cheeky script for the lovely countdown timer-->
+        <script>
+
+            var countDownDate = new Date("Mar 5, 2020 12:00:00").getTime();
+            var x = setInterval(function() {
+
+            var now = new Date().getTime();
+
+            var distance = countDownDate - now;
+
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("timer").innerHTML = days + "d " + hours + "h "
+            + minutes + "m " + seconds + "s ";
+
+            if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("timer").innerHTML = "EXPIRED";
+        }
+        }, 1000);
+        </script>
+        <link rel="shortcut icon" type="image/jpg" href="new_va_logo.png">
+    </head>
+    <body>
+        <header>
+            <!-- Overlay for images -->
+            <!-- <div id="mask">
+                <img src="original.jpg" />
+            </div> -->
+
+            <div class="slideshow-container">
+                <div id="mask"> <!-- For the highly requested blur -->
+                <div class="mySlides fade">
+                  <img src="original.jpg" style="width:100%">
+                </div>
+              
+                <div class="mySlides fade">
+                  <img src="original1.jpg" style="width:100%">
+                </div>
+              
+                <div class="mySlides fade">
+                  <img src="20190302014428_1.jpg" style="width:100%">
+                </div>
+              
+              </div>
+            </div>
+
+            <div class="time"> <!-- Self Explanatory-->
+                <h1 id="timer"></h1>
+            </div>
+            
+            <div class="title">
+                <img src="test.png"> <!-- Coming Soon Image -->
+            </div>
+        </header>
+        <script src="functions.js"></script>
+        <!-- The best way to fix an issue is to ignore it until someone questions it. -->
+    </body>
+    <!-- Any complaints go to "VorteK likes 🆄🆆🆄 shtuff#6849"-->
+</html>
