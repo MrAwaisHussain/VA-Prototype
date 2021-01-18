@@ -1,6 +1,6 @@
 # VA-Prototype
 Preview:
 
-![WebsiteGif](https://i.imgur.com/BzHU6gM.gif)
+![WebsiteDemo](https://i.imgur.com/JrROoG0.png)
 
 A website prototype for Vortek Academy - A placeholder to put it simply
